@@ -1,0 +1,10 @@
+{
+  "project_name": "e.g. 'six-toolbox'",
+  "package_name": "{{cookiecutter.project_name.replace('-','_')}}",
+  "package_version": "0.0.1",
+  "short_description": "Great python package",
+  "author":"Jesue Junior",
+  "author_email": "opensource@sixcodes.com",
+  "author_username": "sixcodes",
+  "url": "https://github.com/{{cookiecutter.author_username}}/{{cookiecutter.project_name}}"
+}

@@ -1,4 +1,4 @@
-# Python Boilerplate
+# {{cookiecutter.project_name}}
 
 A ideia desse projeto é já ser um "start" para seu projeto python. O que temos aqui são configurações pré prontas para que você possa se dedicar inteiramente ao código do seu projeto.
 
@@ -31,7 +31,7 @@ O Pipfile já vem com alguns scripts que ajudam nas tarefas do dia a dia e nas c
 
 - ``pipenv run test``
 
-    Roda os testes do projeto. Esse script está configurado para medir a cobertura do pacote ``myproj``. Esse pacote deve ser ajustado para o pacote onde seu código vai ficar.
+    Roda os testes do projeto. Esse script está configurado para medir a cobertura do pacote ``{{cookiecutter.project_name}}``. Esse pacote deve ser ajustado para o pacote onde seu código vai ficar.
 
 - ``pipenv run lint``
 

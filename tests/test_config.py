@@ -4,9 +4,7 @@ from importlib import reload
 
 # Third party imports
 from asynctest import TestCase, mock
-
-# Local application imports
-from myproj import config
+from {{cookiecutter.project_name}} import config
 
 
 class ConfigTest(TestCase):

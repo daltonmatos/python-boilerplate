@@ -53,7 +53,7 @@ junit_family = "legacy"
 [tool.coverage.run]
 branch = true
 command_line = '-m pytest'
-source = ['myproj/']
+source = ['{{cookiecutter.project_name}}/']
 
 [tool.coverage.report]
 precision = 2

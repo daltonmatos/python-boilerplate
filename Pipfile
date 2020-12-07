@@ -7,7 +7,7 @@ name = "pypi"
 pydantic = "==1.6.1"
 
 [dev-packages]
-python-boilerplate = {editable = true,path = "."}
+{{cookiecutter.project_name}} = {editable = true,path = "."}
 asynctest = "==0.12.1"
 pytest = "==6.1.2"
 pytest-cov = "==2.10.1"
@@ -25,12 +25,14 @@ flake8 = "==3.8.4"
 flake8-bugbear = "==20.11.1"
 bandit = "==1.6.3"
 pre-commit = "==2.9.2"
+twine = "==3.2.0"
+bumpversion = "==0.6.0"
 
 [requires]
 python_version = "3"
 
 [scripts]
-test = "py.test -v --cov=myproj --cov-report=term-missing --cov-report=xml"
+test = "py.test -v --cov={{cookiecutter.project_name}} --cov-report=term-missing --cov-report=xml"
 lint = "mypy"
 fmt = "black ."
 fmt-check = "black --check ."

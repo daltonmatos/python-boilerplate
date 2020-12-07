@@ -1,8 +1,6 @@
 # Third party imports
 from asynctest import TestCase
-
-# Local application imports
-from myproj import sum
+from {{cookiecutter.project_name}} import sum
 
 
 class TestExample(TestCase):

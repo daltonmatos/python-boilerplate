@@ -10,14 +10,14 @@ from setuptools import (  # Always prefer setuptools over distutils
 here = path.abspath(path.dirname(__file__))
 
 setup(
-    name="python-boilerplate",
-    version="0.0.1",
-    description="Python Boilerplate Project",
+    name="{{cookiecutter.project_name}}",
+    version="{{cookiecutter.package_version}}",
+    description="{{cookiecutter.short_description}}",
     long_description="",
-    url="https://github.com/daltonmatos/python-boilerplate",
+    url="{{cookiecutter.url}}",
     # Author details
-    author="Dalton Matos",
-    author_email="daltonmatos@gmail.com",
+    author="{{cookiecutter.author}}",
+    author_email="{{cookiecutter/author_email}}",
     license="MIT",
     classifiers=[
         "Programming Language :: Python :: 3.6",
