@@ -55,7 +55,7 @@ Os comandos abaixo devem ser executados apenas quando é feito o clone do projet
 
 ```shell
 pre-commit install
-pre-commit install --hook-type pre-puh
+pre-commit install --hook-type pre-push
 ```
 
 # CI/CD
