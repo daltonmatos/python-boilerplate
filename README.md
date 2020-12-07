@@ -9,12 +9,22 @@ O Pipfile já tráz algumas dependencias de desenvolvimento, como:
 
 ```
 asynctest = "==0.12.1"
-pytest = "==4.0.1"
-pytest-cov = "==2.6.0"
-codecov = "==1.0.0"
-mypy = "==0.630"
-black = "==18.9b0"
-isort = "==4.3.15"
+pytest = "==6.1.2"
+pytest-cov = "==2.10.1"
+pytest-mock = "==3.3.1"
+codecov = "==2.0.17"
+mypy = "==0.782"
+black = "==19.10b0"
+isort = "==5.1.4"
+lxml = "==4.6.2"
+sphinx = "==3.2.1"
+sphinx-issues = "==1.2.0"
+sphinx-intl = "==2.0.1"
+safety = "==1.9.0"
+flake8 = "==3.8.4"
+flake8-bugbear = "==20.11.1"
+bandit = "==1.6.3"
+pre-commit = "==2.9.2"
 ```
 
 O Pipfile já vem com alguns scripts que ajudam nas tarefas do dia a dia e nas checagens do CI.
@@ -38,9 +48,14 @@ O Pipfile já vem com alguns scripts que ajudam nas tarefas do dia a dia e nas c
 
 # Pre-commit Hooks
 
+Ao instalar o `pre-commit`, todas as vezes que realizar um novo commit, será checado todos os pontos de qualidade do
+codigo, como codestyle, testes, imports e por aí vai.
+
+Os comandos abaixo devem ser executados apenas quando é feito o clone do projeto.
+
 ```shell
 pre-commit install
-pre-commit install --hook-type pre-push
+pre-commit install --hook-type pre-puh
 ```
 
 # CI/CD
