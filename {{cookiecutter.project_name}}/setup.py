@@ -17,7 +17,7 @@ setup(
     url="{{cookiecutter.url}}",
     # Author details
     author="{{cookiecutter.author}}",
-    author_email="{{cookiecutter/author_email}}",
+    author_email="{{cookiecutter.author_email}}",
     license="MIT",
     classifiers=[
         "Programming Language :: Python :: 3.6",
