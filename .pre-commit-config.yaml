@@ -51,6 +51,6 @@ repos:
         name: coverage
         stages: [push]
         language: system
-        entry: coverage run
+        entry: coverage run -m pytest
         types: [python]
         pass_filenames: false
