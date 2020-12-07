@@ -4,13 +4,13 @@ import sys
 
 sys.path.insert(0, os.path.abspath(".."))
 
-GITHUB_PROFILE = ""
-GITHUB_PROJECT = ""
-PROJECT_NAME = "Project"
-PROJECT_AUTHOR = ""
+GITHUB_PROFILE = "{{cookiecutter.author_username}}"
+GITHUB_PROJECT = "{{cookiecutter.project_name}}"
+PROJECT_NAME = "{{cookiecutter.project_name}}"
+PROJECT_AUTHOR = "{{cookiecutter.author}}"
 
 project = PROJECT_NAME
-copyright = f"20120, {PROJECT_AUTHOR}"
+copyright = f"2020, {PROJECT_AUTHOR}"
 author = PROJECT_AUTHOR
 
 
