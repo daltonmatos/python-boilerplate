@@ -1,5 +1,7 @@
+# Standard library imports
 import os
 
+# Third party imports
 from pydantic import BaseSettings
 
 

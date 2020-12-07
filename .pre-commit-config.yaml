@@ -1,0 +1,56 @@
+repos:
+  - repo: local
+    hooks:
+      - id: isort
+        name: isort
+        stages: [commit]
+        language: system
+        entry: isort
+        types: [python]
+      - id: black
+        name: black
+        stages: [commit]
+        language: system
+        entry: black
+        types: [python]
+      - id: flake8
+        name: flake8
+        stages: [commit]
+        language: system
+        entry: flake8
+        types: [python]
+      - id: mypy
+        name: mypy
+        stages: [commit]
+        language: system
+        entry: mypy
+        types: [python]
+        pass_filenames: false
+      - id: bandit
+        name: bandit
+        stages: [commit]
+        language: system
+        entry: bandit --ini .bandit -r
+        types: [python]
+        pass_filenames: false
+      - id: pytest
+        name: pytest
+        stages: [commit]
+        language: system
+        entry: pytest -v --showlocals
+        types: [python]
+        pass_filenames: false
+      - id: safety
+        name: safety
+        stages: [commit]
+        language: system
+        entry: safety check
+        types: [python]
+        pass_filenames: false
+      - id: coverage
+        name: coverage
+        stages: [push]
+        language: system
+        entry: coverage run
+        types: [python]
+        pass_filenames: false

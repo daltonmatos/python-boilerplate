@@ -36,6 +36,13 @@ O Pipfile já vem com alguns scripts que ajudam nas tarefas do dia a dia e nas c
     Formata o código ordenando os imports usando o projeto isort. O comando ``pipenv run isort-check`` apenas checa se algum import precisa ser reformatado. É útil para rodar no processo de CI.
 
 
+# Pre-commit Hooks
+
+```shell
+pre-commit install
+pre-commit install --hook-type pre-push
+```
+
 # CI/CD
 
 Esse repositorio já possui alguns workflows do Github Actions pré-configurados. Os workflows são:

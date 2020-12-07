@@ -1,8 +1,11 @@
+# Standard library imports
 import os
 from importlib import reload
 
+# Third party imports
 from asynctest import TestCase, mock
 
+# Local application imports
 from myproj import config
 
 
