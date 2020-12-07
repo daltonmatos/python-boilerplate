@@ -1,6 +1,7 @@
-from codecs import open  # To use a consistent encoding
+# Standard library imports
 from os import path
 
+# Third party imports
 from setuptools import (  # Always prefer setuptools over distutils
     find_packages,
     setup,
@@ -21,6 +22,8 @@ setup(
     classifiers=[
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
     ],
     packages=find_packages(exclude=["contrib", "docs", "tests*"]),
     test_suite="tests",
