@@ -122,3 +122,6 @@ dmypy.json
 
 # IDE's
 .idea
+
+# Apple
+.DS_Store
