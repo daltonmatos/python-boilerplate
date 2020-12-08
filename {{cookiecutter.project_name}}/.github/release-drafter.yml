@@ -24,6 +24,6 @@ template: |
 
   $CHANGES
 
-  Docs: https://github.com/sixcodes/python-boilerplate
-  Commits: https://github.com/sixcodes/python-boilerplate/compare/$PREVIOUS_TAG...$RESOLVED_VERSION
-  Tag: https://github.com/sixcodes/python-boilerplate/releases/tag/$RESOLVED_VERSION
+  Docs: https://github.com/{{cookiecutter.author_username}}/{{cookiecutter.project_name}}
+  Commits: https://github.com/{{cookiecutter.author_username}}/{{cookiecutter.project_name}}/compare/$PREVIOUS_TAG...$RESOLVED_VERSION
+  Tag: https://github.com/{{cookiecutter.author_username}}/{{cookiecutter.project_name}}/releases/tag/$RESOLVED_VERSION
