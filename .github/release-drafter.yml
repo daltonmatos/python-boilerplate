@@ -1,0 +1,29 @@
+categories:
+  - title: 'Mudanças incompatíveis'
+    label: 'breaking-change'
+  - title: 'Bugs Resolvidos'
+    label: 'bug'
+  - title: 'Novas Features'
+    label: 'feature'
+  - title: 'Documentação'
+    label: 'docs'
+change-template: '- #$NUMBER $TITLE (@$AUTHOR)'
+version-resolver:
+  major:
+    labels:
+      - 'breaking-change'
+  minor:
+    labels:
+      - 'feature'
+  patch:
+    labels:
+      - 'bug'
+  default: patch
+template: |
+  ## Changelog for $RESOLVED_VERSION
+
+  $CHANGES
+
+  Docs: https://github.com/sixcodes/python-boilerplate
+  Commits: https://github.com/sixcodes/python-boilerplate/compare/$PREVIOUS_TAG...$RESOLVED_VERSION
+  Tag: https://github.com/sixcodes/python-boilerplate/releases/tag/$RESOLVED_VERSION
