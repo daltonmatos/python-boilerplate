@@ -7,5 +7,5 @@
   "author_email": "opensource@sixcodes.com",
   "author_username": "sixcodes",
   "url": "https://github.com/{{cookiecutter.author_username}}/{{cookiecutter.project_name}}",
-  "_copy_without_render": [".github/*.yaml", "docs"]
+  "_copy_without_render": ["docs"]
 }

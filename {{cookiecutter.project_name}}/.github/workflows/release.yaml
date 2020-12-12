@@ -30,9 +30,10 @@ jobs:
 
       - name: Twine check
         run: twine check dist/*
-
+{% raw %}
       - name: Publish (${{github.ref}})
         env:
           TWINE_USERNAME: __token__
           TWINE_PASSWORD: ${{secrets.PYPI_TOKEN}}
         run: twine upload dist/*
+{% endraw -%}
