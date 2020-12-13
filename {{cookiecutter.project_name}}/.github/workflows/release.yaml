@@ -4,7 +4,8 @@ on:
   push:
     tags:
       - '[0-9]+.[0-9]+.[0-9]+'
-
+  release:
+      types: [published, created]
 
 jobs:
   publish:
@@ -26,7 +27,7 @@ jobs:
         run: pip install twine==3.2.0
 
       - name: Generate Packages
-        run: python setup.py sdist wheel
+        run: python setup.py sdist bdist_wheel
 
       - name: Twine check
         run: twine check dist/*
