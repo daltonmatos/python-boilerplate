@@ -2,7 +2,7 @@
 
 ## Como usar?
 
-Primeiramente garanta que você tem o cookiecutter instaaldo no seu PATH.
+Primeiramente garanta que você tem o cookiecutter instalado no seu PATH.
 
 ```shell
 sudo pip install cookiecutter
@@ -85,6 +85,18 @@ sixcodes
 
 7 directories, 38 files
 ```
+
+## O que esse boilerplate entrega
+
+
+### Github Actions Workflows
+
+O projeto criado já tras alguns workflows do Github Actions:
+
+- `pull-request`: Workflow que roda a cada pull-request aberto. Roda os testes a checagens de lint, format, etc.
+- `release`: A cada tag criada com o padrão `X.Y.Z` gera uma publicação no Pypi.
+
+  Para essa publicação você precisa adicionar um secret ao projeto com nome `PYPI_TOKEN`. Mais detalhes na [documentação do Pypi](https://pypi.org/help/#apitoken):
 
 ## Como ajudar?
 
