@@ -23,7 +23,7 @@ jobs:
         run: pip install -U pip==20.2.3
 
       - name: Install twine
-        run: pip install twine=={{cookiecutter.project_name}}
+        run: pip install twine==3.2.0
 
       - name: Generate Packages
         run: python setup.py sdist wheel
