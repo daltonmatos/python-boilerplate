@@ -7,11 +7,14 @@ from setuptools import (  # Always prefer setuptools over distutils
     setup,
 )
 
+# Local application imports
+from {{cookiecutter.project_name}} import __version__
+
 here = path.abspath(path.dirname(__file__))
 
 setup(
     name="{{cookiecutter.project_name}}",
-    version="{{cookiecutter.package_version}}",
+    version=__version__,
     description="{{cookiecutter.short_description}}",
     long_description="",
     url="{{cookiecutter.url}}",
